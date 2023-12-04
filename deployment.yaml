@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argo-deployment
+  labels:
+    app: argo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argo
+  template:
+    metadata:
+      labels:
+        app: argo
+    spec:
+      containers:
+      - name: argo
+        image: vizzwastaken/proj1
+        ports:
+        - containerPort: 80
