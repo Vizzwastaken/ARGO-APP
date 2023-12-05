@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: argo
-        image: vizzwastaken/proj1:dd853c75b599eb19a1225731aa1199c12e1b1f98
+        image: vizzwastaken/proj1:d17d0848934998e190c6eac933923bcb4beb3127
         ports:
         - containerPort: 80
