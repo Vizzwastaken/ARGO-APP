@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   name: argo-deployment
   labels:
-    app: argo
+    app: argo-deploy
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: argo
@@ -15,7 +15,7 @@ spec:
         app: argo
     spec:
       containers:
-      - name: argo
+      - name: html-pod
         image: vizzwastaken/proj1:e3746500fd015dc7ef2fc9b4991f2de7897d78b3
         ports:
         - containerPort: 80
