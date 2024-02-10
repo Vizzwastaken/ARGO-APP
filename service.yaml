@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: web-app
   name: argo-service
   labels:
     app: argo
