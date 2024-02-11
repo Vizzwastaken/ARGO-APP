@@ -13,7 +13,7 @@
   kind: PersistentVolumeClaim
   metadata:
     namespace: web-app
-    name: my-pvc
+    name: web-pvc
   spec:
     accessModes:
       - ReadWriteOnce
