@@ -20,10 +20,10 @@ spec:
         image: vizzwastaken/proj1:c9cf893197f1a45161615f27b55fb9307bfee5b7
         ports:
         - containerPort: 80
-        volumeMount:
+        volumeMounts:
           - mountPath: /etc/todos/todo.db
-            volume: web-app-store
-      volume:
+            name: web-app-store
+      volumes:
         - name: web-app-store
           persistentVolumeClaim:
             claimName: web-pvc
