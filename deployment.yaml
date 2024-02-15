@@ -23,6 +23,13 @@ spec:
         volumeMounts:
           - mountPath: /etc/todos/todo.db
             name: web-app-store
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
       volumes:
         - name: web-app-store
           persistentVolumeClaim:
