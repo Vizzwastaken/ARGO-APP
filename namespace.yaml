@@ -10,7 +10,7 @@ metadata:
   namespace: web-app
 spec:
   hard:
-    requests.cpu: "1"
+    requests.cpu: "10m"
     requests.memory: 1Gi
-    limits.cpu: "2"
+    limits.cpu: "20m"
     limits.memory: 2Gi
