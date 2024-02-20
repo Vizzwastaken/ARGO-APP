@@ -8,9 +8,9 @@ metadata:
 spec:
   selector:
     app: argo
-  type: NodePort
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      nodePort: 30001
+
