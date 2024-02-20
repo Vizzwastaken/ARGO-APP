@@ -26,10 +26,10 @@ spec:
         resources:
           requests:
             memory: "64Mi"
-            cpu: "250m"
+            cpu: "2m"
           limits:
             memory: "128Mi"
-            cpu: "500m"
+            cpu: "5m"
       # volumes:
       #   - name: web-app-store
       #     persistentVolumeClaim:
